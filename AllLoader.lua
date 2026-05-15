@@ -2,7 +2,7 @@ local a = {
     ["Dig To Escape 1"] = {
         73510530738011,
         92122513197996
-    },
+    }
 }
 
 local b = nil
@@ -10,7 +10,7 @@ local b = nil
 for c, d in pairs(a) do
     for _, e in ipairs(d) do
 
-        if game.GameId == e then
+        if game.PlaceId == e then
             b = c
             break
         end
@@ -38,5 +38,5 @@ if b then
     end
 
 else
-    warn("Unsupported Game")
+    warn("Unsupportedd Game")
 end
